@@ -1,0 +1,94 @@
+/* apply a natural box layout model to all elements */
+*,
+*:before,
+*:after
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body * + *
+{
+    margin-top: 1.5em;
+}
+
+::selection,
+::-moz-selection
+{
+    color: #fff;
+    background: #000;
+    text-shadow: none;
+}
+
+body
+{
+    font: 100% 'Lato', Helvetica, sans-serif;
+    line-height: 1.5em;
+
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+    margin: 0;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: justify;
+    word-wrap: break-word;
+    hyphens: auto;
+    color: #606463;
+    background: #fefefe;
+}
+
+@media (min-width: 40em)
+{
+    body {
+        font-size: 112.5%;
+        width: 88%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 60em)
+{
+    body {
+        width: 75%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 80em)
+{
+    body {
+        font-size: 125%;
+        width: 66.6666666%;
+        text-align: left;
+    }
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #2a2c39;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    font-weight: 700;
+    color: #2a2c39;
+}
+
+a:hover {
+    color: #39cccc;
+    border-color: #39cccc;
+}
+
+footer {
+    font-size: .75em;
+    color: inherit;
+}
