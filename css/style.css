@@ -39,7 +39,6 @@ body {
 }
 
 main {
-    /*max-width: 1024px;*/
     min-height: 100%;
     margin-bottom: -3em;
 }
@@ -82,7 +81,6 @@ h1 {
     font-weight: 700;
     line-height: 1.5em;
     margin-top: 0;
-    /*border-bottom: 2px solid;*/
 }
 
 p { margin-bottom: 0; }
