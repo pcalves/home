@@ -20,6 +20,7 @@
     "surge": "~0.14.3"
   },
   "scripts": {
+    "compile": "echo \"If you’re using a static site generator or other compilation step, you could run it here!\"",
     "deploy": "npm run compile && surge --project ./ --domain pcalv.es"
   }
 }
