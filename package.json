@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "description": "The online home of Paulo Coelho Alves.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pcalves/home.git"
+  },
+  "author": "Paulo Coelho Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pcalves/home/issues"
+  },
+  "homepage": "https://github.com/pcalves/home",
+  "devDependencies": {
+    "surge": "~0.14.3"
+  },
+  "scripts": {
+    "deploy": "npm run compile && surge --project ./ --domain pcalv.es"
+  }
+}
