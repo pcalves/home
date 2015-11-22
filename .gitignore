@@ -12,3 +12,7 @@ logs
 node_modules
 components
 bower_components
+
+# Vim files
+Session.vim
+tags

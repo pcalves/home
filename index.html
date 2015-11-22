@@ -1,63 +1,64 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Paulo Coelho Alves</title>
-    <meta name="description" content="Personal website of Paulo Coelho Alves, maker of web sites.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="favicon.png">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Paulo Coelho Alves</title>
+        <meta name="description" content="Personal website of Paulo Coelho Alves, maker of web sites.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="preconnect" href="//f.fontdeck.com/" crossorigin>
+    </head>
 
-<body>
+    <body>
 
-    <main class="grid">
+        <main class="grid">
 
-        <div class="col-1-4">
-            <img src="images/me.png" class="logo">
-        </div>
-        
-        <div class="col-1-4">
-            <header>
-                <h1>Hi. How are you?</h1>
-                <h1>I'm Paulo and I make web sites.</h1>
-            </header>
-        </div>
+            <div class="col-1-4">
+                <img src="images/me.png" class="logo" alt="This is me, the author of this site.">
+            </div>
 
-        <div class="col-1-2">
-            <section>
-                <p>Currently employed as a full-time developer at <a href="http://www.others.pt/" title="Others — Digital Thinking" target="blank">Others</a> in Lisboa, Portugal.</p>
-                <p>Being quite a small company, I'm required to jump from the back to the front end of development and anywhere in between.</p>
-                <p>This is the perenially future home of my online portfolio. You know, some day.</p>
-                <p>
-                    In the meantime, I can be found, followed and/or ignored at
-                    <a href="http://twitter.com/sunlandictwin" title="Ramblings, links, GIFs, the usual." target="blank">Twitter</a>,
-                    <a href="http://reading.am/pcalves" title="What I'm reading!" target="blank">Reading</a>,
-                    <a href="http://instagram.com/pcalves" title="Cats, mostly." target="blank"/>Instagram</a>,
-                    <a href="http://letterboxd.com/pcalves/" title="Movies, movies, movies." target="blank">Letterboxd</a> &amp; <a href="http://www.rdio.com/people/pcalves/" title="I listen to a lot of music." target="blank">Rdio</a>.
-                    Also good, reliable <a href="mailto:paulo@pcalv.es" title="I'll definitely get back to you.">email</a>.
-                </p>
-            </section>
-        </div>
-    </main>
+            <div class="col-1-4">
+                <header>
+                    <h1>Hi. How are you?</h1>
+                    <h1>I'm Paulo and I make web sites.</h1>
+                </header>
+            </div>
 
-    <footer>
-        &#x203b; Last updated on the <time datetime="2015-09-02 16:05">2nd of September, 2015, at around 5pm. Listening to <a href="https://soundcloud.com/hello_saffron/sets/petra-i" target="blank">Saffron</a> (thx <a href="http://thefoxisblack.com/2015/09/01/saffron-better-than-the-spice/" target="blank">The Fox is Black</a> ♥︎).</time>
-    </footer>
+            <div class="col-1-2">
+                <section>
+                    <p>I'm Currently working as a full-time web developer at <a href="http://www.others.pt/" title="Others — Digital Thinking" target="blank">Others</a> in Lisboa, Portugal.</p>
+                    <p>Being quite a small company, I'm required to jump from the back to the front end of development and anywhere in between.</p>
+                    <p>This is the perenially future home of my online portfolio. You know, some day.</p>
+                    <p>
+                        In the meantime, I can be found, followed and/or ignored at
+                        <a href="http://twitter.com/sunlandictwin" title="Ramblings, links, GIFs, the usual." target="blank">Twitter</a>,
+                        <a href="http://reading.am/pcalves" title="What I'm reading." target="blank">Reading</a>,
+                        <a href="http://instagram.com/pcalves" title="Cats, mostly." target="blank"/>Instagram</a>,
+                        <a href="http://letterboxd.com/pcalves/" title="Movies, movies, movies." target="blank">Letterboxd</a> &amp; <a href="http://www.rdio.com/people/pcalves/" title="I listen to a lot of music." target="blank"><del datetime="2015-11-22T12:03:23 +0000">Rdio</del></a> (RIP).
+                        Also good, reliable <a href="mailto:paulo@pcalv.es" title="I'll definitely get back to you.">email</a>.
+                    </p>
+                </section>
+            </div>
+        </main>
 
-    <script type="text/javascript">
-        WebFontConfig = { fontdeck: { id: '59502' } };
+        <footer>
+            &#x203b; Last updated on the <time datetime="2015-11-22 12:05">22nd of November, 2015</time>, at around noon.
+        </footer>
 
-        (function() {
-            var wf = document.createElement('script');
-            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-            wf.type = 'text/javascript';
-            wf.async = 'true';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(wf, s);
-        })();
-    </script>
-</body>
+        <script type="text/javascript">
+            WebFontConfig = {
+                fontdeck: { id: '59502' },
+                active: function() {
+                    sessionStorage.fonts = true;
+                }
+            };
+            (function(d) {
+                var wf = d.createElement('script'), s = d.scripts[0];
+                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+                s.parentNode.insertBefore(wf, s);
+            })(document);
+        </script>
+    </body>
 </html>
