@@ -1,10 +1,12 @@
 {
   "name": "portfolio",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "The online home of Paulo Coelho Alves.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "echo \"If you’re using a static site generator or other compilation step, you could run it here!\"",
+    "deploy": "npm run compile && surge --project ./ --domain pcalv.es"
   },
   "repository": {
     "type": "git",
@@ -12,15 +14,8 @@
   },
   "author": "Paulo Coelho Alves",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pcalves/home/issues"
-  },
-  "homepage": "https://github.com/pcalves/home",
+  "homepage": "https://pcalv.es",
   "devDependencies": {
     "surge": "~0.14.3"
-  },
-  "scripts": {
-    "compile": "echo \"If you’re using a static site generator or other compilation step, you could run it here!\"",
-    "deploy": "npm run compile && surge --project ./ --domain pcalv.es"
   }
 }
